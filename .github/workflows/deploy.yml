@@ -32,7 +32,12 @@ jobs:
 
       - name: Instalar dependencias (modo seguro)
         working-directory: /var/www/lexmar-staging
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
       - name: Compilar aplicación Next.js
         working-directory: /var/www/lexmar-staging
