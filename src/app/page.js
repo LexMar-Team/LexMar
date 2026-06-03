@@ -13,7 +13,7 @@ export default function LexMarPage() {
       <header className="main-header">
         <nav className="nav-container">
           <a href="/" className="logo">
-            <img src="/Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" />
+            <img src="/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
