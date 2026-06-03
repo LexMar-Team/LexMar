@@ -39,21 +39,11 @@ export default function LexMarPage() {
      
 
       <main>
-        <section className="hero">
-          <div className="hero-bg"></div>
-          <div className="hero-content">
-            <p className="eyebrow">Despacho de Abogados · Santa Cruz de Tenerife</p>
-            <h1 className="reveal">En medio de la tormenta, <span className="text-accent">somos tu calma.</span></h1>
-            <p className="tagline">La tranquilidad es el mejor resultado</p>
-            <p className="hero-desc reveal reveal-delay-1">
-              Asesoramiento jurídico en Derecho Laboral, Civil, Penal para particulares y empresas en Tenerife, Canarias y toda España.
-            </p>
-            <div className="hero-btns reveal reveal-delay-2">
-              <a href="/contacto" className="btn-primary">Solicitar consulta</a>
-              <a href="/servicios" className="btn-outline">Ver servicios</a>
-            </div>
-          </div>
-        </section>
+        <section className="hero" style={{ height: '500px', backgroundColor: '#162A54', color: 'white' }}>
+  <div className="hero-content">
+    <h1>En medio de la tormenta, somos tu calma.</h1>
+  </div>
+</section>
 
         <section className="contact-bar">
           <div className="container contact-bar-grid">
