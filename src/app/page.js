@@ -1,6 +1,35 @@
+'use client'; // 1. Marcamos como componente de cliente
+
+import { useState } from 'react'; // 2. Importamos useState
+
 export default function LexMarPage() {
+  // 3. Definimos la lógica de setCookie para evitar errores
+  const setCookie = (valor) => {
+    console.log("Cookie configurada como:", valor);
+    // Aquí puedes añadir tu lógica real de cookies (ej. document.cookie)
+  };
+
   return (
     <>
+      <header className="main-header">
+        <nav className="nav-container">
+          {/* ... resto de tu código igual ... */}
+          <a href="index.html" className="logo">
+            <img src="Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" />
+            <span className="logo-text">LEXMAR</span>
+          </a>
+
+          <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+          <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
+
+          <ul className="nav-menu">
+            <li><a href="index.html" className="nav-link active">Inicio</a></li>
+            <li><a href="servicios.html" className="nav-link">Servicios</a></li>
+            <li><a href="sobre-nosotros.html" className="nav-link">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" className="nav-btn-alt">Consulta</a></li>
+          </ul>
+        </nav>
+      </header>
       <header className="main-header">
         <nav className="nav-container">
           <a href="index.html" className="logo">
@@ -228,9 +257,9 @@ export default function LexMarPage() {
       </footer>
 
       <div className="cookie-banner" id="cookieBanner">
-        <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio web. Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias. Más información en nuestra <a href="politica-cookies.html">Política de Cookies</a>.</p>
+        <p>Utilizamos cookies propias y de terceros. <a href="politica-cookies.html">Política de Cookies</a>.</p>
         <div className="cookie-actions">
-          <button className="cookie-btn cookie-btn-reject" onClick={() => setCookie('rejected')}>Rechazar no esenciales</button>
+          <button className="cookie-btn cookie-btn-reject" onClick={() => setCookie('rejected')}>Rechazar</button>
           <button className="cookie-btn cookie-btn-accept" onClick={() => setCookie('accepted')}>Aceptar todas</button>
         </div>
       </div>
