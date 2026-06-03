@@ -80,7 +80,7 @@ export default function LexMarPage() {
               <p className="section-subtitle">Estudiamos cada asunto antes de aceptarlo. Si tiene base jurídica sólida, lo trabajamos con la dedicación que merece. Si no la tiene, preferimos decírtelo.</p>
               <div className="title-underline"></div>
             </div>
-            <div className="services-grid">
+            <div className="services-card">
               <div className="service-card reveal">
                 <div className="service-icon"><i className="fa-solid fa-anchor"></i></div>
                 <h3>Derecho Laboral y Seguridad Social</h3>
