@@ -16,13 +16,16 @@ export default function Servicios() {
             <img src="/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
+
           <input type="checkbox" id="menu-toggle" className="menu-toggle" />
           <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
+          
           <ul className="nav-menu">
             <li><a href="/" className="nav-link">Inicio</a></li>
             <li><a href="/servicios" className="nav-link active">Servicios</a></li>
             <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
             <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
+          </ul>
             <div className="nav-actions">
             <div className="social-icons">
               <a href="#" className="btn-89" aria-label="Facebook" rel="noopener"><i className="fa-brands fa-facebook-f"></i></a>
@@ -30,7 +33,6 @@ export default function Servicios() {
               <a href="#" className="btn-89" aria-label="LinkedIn" rel="noopener"><i className="fa-brands fa-linkedin-in"></i></a>
             </div>
             </div>
-          </ul>
         </nav>
       </header>
 
