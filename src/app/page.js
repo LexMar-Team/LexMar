@@ -12,27 +12,8 @@ export default function LexMarPage() {
     <>
       <header className="main-header">
         <nav className="nav-container">
-          {/* ... resto de tu código igual ... */}
           <a href="/" className="logo">
-            <img src="/LexMar_logo_white.png" alt="LexMar Abogados" />
-            <span className="logo-text">LEXMAR</span>
-          </a>
-
-          <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-          <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
-
-          <ul className="nav-menu">
-            <li><a href="/" className="nav-link active">Inicio</a></li>
-            <li><a href="/servicios" className="nav-link">Servicios</a></li>
-            <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
-            <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
-          </ul>
-        </nav>
-      </header>
-      <header className="main-header">
-        <nav className="nav-container">
-          <a href="/" className="logo">
-            <img src=" /LexMar_logo_white.png" alt="LexMar Abogados" />
+            <img src="/Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
@@ -55,6 +36,7 @@ export default function LexMarPage() {
           </div>
         </nav>
       </header>
+     
 
       <main>
         <section className="hero">
