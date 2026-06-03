@@ -749,7 +749,7 @@ img { max-width: 100%; display: block; }
 .contact-form textarea {
   width: 100%;
   padding: 0.9rem 1rem;
-  border: 1.5px solid #dde3ed;
+  border: 1.5px solid #123b82;
   background: var(--light-bg);
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
