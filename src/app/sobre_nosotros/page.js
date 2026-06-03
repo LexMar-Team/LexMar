@@ -51,14 +51,32 @@ export default function SobreNosotros() {
             <img src="/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
+
           <input type="checkbox" id="menu-toggle" className="menu-toggle" />
           <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
+            <span></span>
+          
+
           <ul className="nav-menu">
             <li><a href="/" className="nav-link">Inicio</a></li>
             <li><a href="/servicios" className="nav-link">Servicios</a></li>
-            <li><a href="/sobre-nosotros" className="nav-link active">Sobre Nosotros</a></li>
+            <li><a href="/sobre_nosotros" className="nav-link active">Sobre Nosotros</a></li>
             <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
           </ul>
+
+          <div className="nav-actions">
+            <div className="social-icons">
+              <a href="#" className="btn-89" aria-label="Facebook" rel="noopener">
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" className="btn-89" aria-label="Instagram" rel="noopener">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" className="btn-89" aria-label="LinkedIn" rel="noopener">
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </nav>
       </header>
 
