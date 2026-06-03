@@ -1,7 +1,6 @@
 'use client'; // 1. Marcamos como componente de cliente
 
 import { useState } from 'react'; // 2. Importamos useState
-import './globals.css';
 export default function LexMarPage() {
   // 3. Definimos la lógica de setCookie para evitar errores
   const setCookie = (valor) => {
@@ -15,7 +14,7 @@ export default function LexMarPage() {
         <nav className="nav-container">
           {/* ... resto de tu código igual ... */}
           <a href="/public" className="logo">
-            <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
+            <img src="/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
@@ -33,7 +32,7 @@ export default function LexMarPage() {
       <header className="main-header">
         <nav className="nav-container">
           <a href="/public" className="logo">
-            <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
+            <img src=" /LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
