@@ -1,7 +1,7 @@
 'use client'; // 1. Marcamos como componente de cliente
 
 import { useState } from 'react'; // 2. Importamos useState
-
+import '.globals.css';
 export default function LexMarPage() {
   // 3. Definimos la lógica de setCookie para evitar errores
   const setCookie = (valor) => {
@@ -14,8 +14,8 @@ export default function LexMarPage() {
       <header className="main-header">
         <nav className="nav-container">
           {/* ... resto de tu código igual ... */}
-          <a href="index.html" className="logo">
-            <img src="Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" />
+          <a href="page.js" className="logo">
+            <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
@@ -23,17 +23,17 @@ export default function LexMarPage() {
           <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
 
           <ul className="nav-menu">
-            <li><a href="index.html" className="nav-link active">Inicio</a></li>
-            <li><a href="servicios.html" className="nav-link">Servicios</a></li>
-            <li><a href="sobre-nosotros.html" className="nav-link">Sobre Nosotros</a></li>
-            <li><a href="contacto.html" className="nav-btn-alt">Consulta</a></li>
+            <li><a href="/page.js" className="nav-link active">Inicio</a></li>
+            <li><a href="/servicios" className="nav-link">Servicios</a></li>
+            <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
+            <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
           </ul>
         </nav>
       </header>
       <header className="main-header">
         <nav className="nav-container">
-          <a href="index.html" className="logo">
-            <img src="Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" />
+          <a href="/page.js" className="logo">
+            <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
 
@@ -41,10 +41,10 @@ export default function LexMarPage() {
           <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
 
           <ul className="nav-menu">
-            <li><a href="index.html" className="nav-link active">Inicio</a></li>
-            <li><a href="servicios.html" className="nav-link">Servicios</a></li>
-            <li><a href="sobre-nosotros.html" className="nav-link">Sobre Nosotros</a></li>
-            <li><a href="contacto.html" className="nav-btn-alt">Consulta</a></li>
+            <li><a href="page.js" className="nav-link active">Inicio</a></li>
+            <li><a href="/servicios" className="nav-link">Servicios</a></li>
+            <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
+            <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
           </ul>
 
           <div className="nav-actions">
@@ -68,8 +68,8 @@ export default function LexMarPage() {
               Asesoramiento jurídico en Derecho Laboral, Civil, Penal para particulares y empresas en Tenerife, Canarias y toda España.
             </p>
             <div className="hero-btns reveal reveal-delay-2">
-              <a href="contacto.html" className="btn-primary">Solicitar consulta</a>
-              <a href="servicios.html" className="btn-outline">Ver servicios</a>
+              <a href="/contacto" className="btn-primary">Solicitar consulta</a>
+              <a href="/servicios" className="btn-outline">Ver servicios</a>
             </div>
           </div>
         </section>
@@ -122,7 +122,7 @@ export default function LexMarPage() {
               </div>
             </div>
             <div style={{textAlign: 'center', marginTop: '3rem'}}>
-              <a href="servicios.html" className="btn-primary" style={{background: 'var(--primary)', borderColor: 'var(--primary)'}}>Ver todos los servicios</a>
+              <a href="/servicios" className="btn-primary" style={{background: 'var(--primary)', borderColor: 'var(--primary)'}}>Ver todos los servicios</a>
             </div>
           </div>
         </section>
@@ -171,7 +171,7 @@ export default function LexMarPage() {
                 <li><i className="fa-solid fa-check"></i> Especialización en 4 áreas de práctica</li>
                 <li><i className="fa-solid fa-check"></i> 100% compromiso con tu caso</li>
               </ul>
-              <a href="sobre-nosotros.html" style={{display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginTop: '1.5rem', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--primary)', textDecoration: 'none'}}>
+              <a href="/sobre-nosotros" style={{display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginTop: '1.5rem', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--primary)', textDecoration: 'none'}}>
                 Conocer el despacho <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -202,7 +202,7 @@ export default function LexMarPage() {
             <span className="section-label" style={{color: 'var(--accent)'}}>Podemos ayudarte</span>
             <h2>¿Tienes un problema legal? Cuéntanoslo.</h2>
             <p>La primera consulta es el primer paso. Te diremos con honestidad qué podemos hacer por ti, sin compromiso.</p>
-            <a href="contacto.html" className="btn-primary">Contactar con LexMar <i className="fa-solid fa-arrow-right"></i></a>
+            <a href="/contacto" className="btn-primary">Contactar con LexMar <i className="fa-solid fa-arrow-right"></i></a>
           </div>
         </section>
       </main>
@@ -212,7 +212,7 @@ export default function LexMarPage() {
           <div className="footer-grid">
             <div className="footer-col footer-brand">
               <div className="logo" style={{marginBottom: '0.75rem'}}>
-                <img src="Imagenes/LexMar_logo_white.png" alt="LexMar Abogados" style={{height: '36px'}} />
+                <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" style={{height: '36px'}} />
                 <span className="logo-text">LEXMAR</span>
               </div>
               <p>Calle Bethencourt y Molina nº 1,<br />1º Local 36, 38003 Santa Cruz de Tenerife</p>
@@ -227,37 +227,37 @@ export default function LexMarPage() {
             <div className="footer-col">
               <h4>Servicios</h4>
               <ul className="footer-links">
-                <li><a href="servicios.html#laboral">Derecho Laboral</a></li>
-                <li><a href="servicios.html#civil">Derecho Civil</a></li>
-                <li><a href="servicios.html#penal">Derecho Penal</a></li>
-                <li><a href="servicios.html#accidentes">Accidentes</a></li>
+                <li><a href="/servicios#laboral">Derecho Laboral</a></li>
+                <li><a href="/servicios#civil">Derecho Civil</a></li>
+                <li><a href="/servicios#penal">Derecho Penal</a></li>
+                <li><a href="/servicios#accidentes">Accidentes</a></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>Legal y navegación</h4>
               <ul className="footer-links">
-                <li><a href="aviso-legal.html">Aviso Legal</a></li>
-                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                <li><a href="politica-cookies.html">Política de Cookies</a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/aviso-legal">Aviso Legal</a></li>
+                <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+                <li><a href="/politica-cookies">Política de Cookies</a></li>
+                <li><a href="/index">Inicio</a></li>
+                <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom">
             <p>© 2025 LexMar Abogados · Coral Ramos Gonzalo, colegiada nº 131177 ICAM · Todos los derechos reservados</p>
             <ul className="footer-legal-links">
-              <li><a href="aviso-legal.html">Aviso Legal</a></li>
-              <li><a href="politica-privacidad.html">Privacidad</a></li>
-              <li><a href="politica-cookies.html">Cookies</a></li>
+              <li><a href="/aviso-legal">Aviso Legal</a></li>
+              <li><a href="/politica-privacidad">Privacidad</a></li>
+              <li><a href="/politica-cookies">Cookies</a></li>
             </ul>
           </div>
         </div>
       </footer>
 
       <div className="cookie-banner" id="cookieBanner">
-        <p>Utilizamos cookies propias y de terceros. <a href="politica-cookies.html">Política de Cookies</a>.</p>
+        <p>Utilizamos cookies propias y de terceros. <a href="/politica-cookies">Política de Cookies</a>.</p>
         <div className="cookie-actions">
           <button className="cookie-btn cookie-btn-reject" onClick={() => setCookie('rejected')}>Rechazar</button>
           <button className="cookie-btn cookie-btn-accept" onClick={() => setCookie('accepted')}>Aceptar todas</button>
