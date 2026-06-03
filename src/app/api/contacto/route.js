@@ -17,7 +17,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'info@lexmarabogados.es',
+      to: 'cristian.vargs2003@gmail.com',
       subject: `Nueva consulta de ${validatedData.nombre}`,
       text: `Mensaje: ${validatedData.mensaje}`,
     });
