@@ -23,6 +23,13 @@ export default function Servicios() {
             <li><a href="/servicios" className="nav-link active">Servicios</a></li>
             <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
             <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
+            <div className="nav-actions">
+            <div className="social-icons">
+              <a href="#" className="btn-89" aria-label="Facebook" rel="noopener"><i className="fa-brands fa-facebook-f"></i></a>
+              <a href="#" className="btn-89" aria-label="Instagram" rel="noopener"><i className="fa-brands fa-instagram"></i></a>
+              <a href="#" className="btn-89" aria-label="LinkedIn" rel="noopener"><i className="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
           </ul>
         </nav>
       </header>
