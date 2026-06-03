@@ -4,11 +4,25 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <head>
+        {/* Enlace a FontAwesome para los iconos */}
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        />
+        
+        {/* Enlaces a las fuentes de Google Fonts (Montserrat y Playfair Display) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" 
+          rel="stylesheet" 
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
 }
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
