@@ -182,8 +182,7 @@ img { max-width: 100%; display: block; }
    HERO
    ============================================= */
 .hero {
-  height: 100vh;
-  min-height: 600px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +190,7 @@ img { max-width: 100%; display: block; }
   color: var(--white);
   position: relative;
   overflow: hidden;
-  padding-top: var(--header-height);
+  padding-top: 100px 20px;
 }
 
 .hero-bg {
