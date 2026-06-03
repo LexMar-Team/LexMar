@@ -198,7 +198,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   top: 0; left: 0; width: 100%; height: 120%;
   background: linear-gradient(160deg, rgba(22, 42, 84, 0.82) 0%, rgba(22, 42, 84, 0.55) 100%),
-              url('public/pexels-mikebirdy-996328.jpg') center/cover no-repeat;
+              url('/pexels-mikebirdy-996328.jpg') center/cover no-repeat;
   z-index: 0;
 }
 
