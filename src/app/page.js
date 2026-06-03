@@ -1,7 +1,7 @@
 'use client'; // 1. Marcamos como componente de cliente
 
 import { useState } from 'react'; // 2. Importamos useState
-import '.globals.css';
+import './globals.css';
 export default function LexMarPage() {
   // 3. Definimos la lógica de setCookie para evitar errores
   const setCookie = (valor) => {
