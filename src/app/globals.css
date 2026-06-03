@@ -180,9 +180,13 @@ img { max-width: 100%; display: block; }
 
 /* =============================================
    HERO
+   BUG FIX 1: padding-top era "100px 20px" (shorthand incorrecto, CSS inválido).
+   BUG FIX 2: min-height: auto no daba altura al hero → colapsaba a 0px.
+   Se restauran las propiedades originales del style.css de referencia.
    ============================================= */
 .hero {
-  min-height: auto;
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,9 +194,12 @@ img { max-width: 100%; display: block; }
   color: var(--white);
   position: relative;
   overflow: hidden;
-  padding-top: 100px 20px;
+  padding-top: var(--header-height);
 }
 
+/* BUG FIX 3: La imagen de fondo usaba 'pexels-mikebirdy-996328.jpg' (ruta relativa).
+   En Next.js la carpeta public/ es la raíz, la URL correcta es '/pexels-mikebirdy-996328.jpg'.
+   (Ya estaba corregido en tu globals.css, se mantiene.) */
 .hero-bg {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 120%;
@@ -364,7 +371,7 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
 }
 
-/* Title underline — elegante y consistente */
+/* Title underline */
 .title-underline {
   display: block;
   width: 60px;
@@ -377,6 +384,8 @@ img { max-width: 100%; display: block; }
 
 /* =============================================
    SERVICES GRID
+   BUG FIX 4: page.js usaba className="services-card" (inexistente).
+   El CSS original define .services-grid. Se corrige en page.js.
    ============================================= */
 .services-grid {
   display: grid;
@@ -576,7 +585,7 @@ img { max-width: 100%; display: block; }
   gap: 2rem;
   text-align: center;
 }
-
+.stat-item {}
 .stat-number {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
@@ -748,7 +757,7 @@ img { max-width: 100%; display: block; }
 .contact-form textarea {
   width: 100%;
   padding: 0.9rem 1rem;
-  border: 1.5px solid #123b82;
+  border: 1.5px solid #dde3ed;
   background: var(--light-bg);
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
