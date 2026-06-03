@@ -39,21 +39,33 @@ export default function LexMarPage() {
      
 
       <main>
-        <section className="hero">
-          <div className="hero-bg"></div>
-          <div className="hero-content">
-            <p className="eyebrow">Despacho de Abogados · Santa Cruz de Tenerife</p>
-            <h1 className="reveal">En medio de la tormenta, <span className="text-accent">somos tu calma.</span></h1>
-            <p className="tagline">La tranquilidad es el mejor resultado</p>
-            <p className="hero-desc reveal reveal-delay-1">
-              Asesoramiento jurídico en Derecho Laboral, Civil, Penal para particulares y empresas en Tenerife, Canarias y toda España.
-            </p>
-            <div className="hero-btns reveal reveal-delay-2">
-              <a href="/contacto" className="btn-primary">Solicitar consulta</a>
-              <a href="/servicios" className="btn-outline">Ver servicios</a>
-            </div>
-          </div>
-        </section>
+        <section className="hero" style={{ 
+  position: 'relative', 
+  backgroundColor: '#162A54', // Azul oscuro de tu marca
+  padding: '80px 20px', 
+  minHeight: '600px', 
+  display: 'flex', 
+  alignItems: 'center', 
+  justifyContent: 'center' 
+}}>
+  <div className="hero-content" style={{ 
+    position: 'relative', 
+    zIndex: 10, 
+    color: '#ffffff', // Forzamos texto blanco
+    textAlign: 'center' 
+  }}>
+    <p className="eyebrow" style={{ color: '#6ea8d9' }}>Despacho de Abogados · Santa Cruz de Tenerife</p>
+    <h1 className="reveal" style={{ fontSize: '3rem', marginBottom: '20px' }}>
+      En medio de la tormenta, <span className="text-accent" style={{ color: '#6ea8d9' }}>somos tu calma.</span>
+    </h1>
+    <p className="tagline" style={{ fontSize: '1.2rem', marginBottom: '30px' }}>La tranquilidad es el mejor resultado</p>
+    
+    <div className="hero-btns reveal reveal-delay-2" style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+      <a href="/contacto" className="btn-primary" style={{ backgroundColor: '#6ea8d9', padding: '15px 30px', color: '#162A54', textDecoration: 'none', fontWeight: 'bold' }}>Solicitar consulta</a>
+      <a href="/servicios" className="btn-outline" style={{ border: '2px solid #ffffff', padding: '15px 30px', color: '#ffffff', textDecoration: 'none' }}>Ver servicios</a>
+    </div>
+  </div>
+</section>
 
         <section className="contact-bar">
           <div className="container contact-bar-grid">
