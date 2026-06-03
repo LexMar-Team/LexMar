@@ -14,7 +14,7 @@ export default function LexMarPage() {
       <header className="main-header">
         <nav className="nav-container">
           {/* ... resto de tu código igual ... */}
-          <a href="page.js" className="logo">
+          <a href="/public" className="logo">
             <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
@@ -23,7 +23,7 @@ export default function LexMarPage() {
           <label htmlFor="menu-toggle" className="hamburger" aria-label="Menú"><span></span></label>
 
           <ul className="nav-menu">
-            <li><a href="/page.js" className="nav-link active">Inicio</a></li>
+            <li><a href="page.js" className="nav-link active">Inicio</a></li>
             <li><a href="/servicios" className="nav-link">Servicios</a></li>
             <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
             <li><a href="/contacto" className="nav-btn-alt">Consulta</a></li>
@@ -32,7 +32,7 @@ export default function LexMarPage() {
       </header>
       <header className="main-header">
         <nav className="nav-container">
-          <a href="/page.js" className="logo">
+          <a href="/public" className="logo">
             <img src="public/LexMar_logo_white.png" alt="LexMar Abogados" />
             <span className="logo-text">LEXMAR</span>
           </a>
@@ -157,7 +157,7 @@ export default function LexMarPage() {
         <section className="section">
           <div className="container about-grid">
             <div className="about-image reveal">
-              <img src="Imagenes/pexels-blitzboy-1106412.jpg" alt="LexMar Abogados - Despacho en Tenerife" />
+              <img src="public/pexels-blitzboy-1106412.jpg" alt="LexMar Abogados - Despacho en Tenerife" />
             </div>
             <div className="about-text reveal reveal-delay-1">
               <span className="section-label">Sobre LexMar</span>
@@ -239,7 +239,7 @@ export default function LexMarPage() {
                 <li><a href="/aviso-legal">Aviso Legal</a></li>
                 <li><a href="/politica-privacidad">Política de Privacidad</a></li>
                 <li><a href="/politica-cookies">Política de Cookies</a></li>
-                <li><a href="/index">Inicio</a></li>
+                <li><a href="page.js">Inicio</a></li>
                 <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="/contacto">Contacto</a></li>
               </ul>
