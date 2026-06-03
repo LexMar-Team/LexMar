@@ -86,7 +86,7 @@ export default function Contacto() {
           <ul className="nav-menu">
             <li><a href="/" className="nav-link">Inicio</a></li>
             <li><a href="/servicios" className="nav-link">Servicios</a></li>
-            <li><a href="/sobre-nosotros" className="nav-link">Sobre Nosotros</a></li>
+            <li><a href="/sobre_nosotros" className="nav-link">Sobre Nosotros</a></li>
             <li><a href="/contacto" className="nav-btn-alt active">Consulta</a></li>
           </ul>
  
@@ -397,7 +397,7 @@ export default function Contacto() {
                 <li><a href="/politica-privacidad">Política de Privacidad</a></li>
                 <li><a href="/politica-cookies">Política de Cookies</a></li>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="/sobre_nosotros">Sobre Nosotros</a></li>
                 <li><a href="/contacto">Contacto</a></li>
               </ul>
             </div>

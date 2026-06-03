@@ -16,7 +16,7 @@ export async function POST(req) {
     const validatedData = schema.parse(body);
 
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: validatedData.email,
       to: 'cristian.vargs2003@gmail.com',
       subject: `Nueva consulta de ${validatedData.nombre}`,
       text: `Mensaje: ${validatedData.mensaje}`,
