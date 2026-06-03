@@ -182,13 +182,16 @@ img { max-width: 100%; display: block; }
    HERO
    ============================================= */
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 80vh; /* Asegura altura mínima */
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  position: relative;
   overflow: hidden;
-  background-color: #162A54; /* Fondo de respaldo (Dark Blue) */
+  padding-top: var(--header-height);
 }
 
 .hero-bg {
@@ -197,14 +200,13 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(160deg, rgba(22, 42, 84, 0.82) 0%, rgba(22, 42, 84, 0.55) 100%),
               url('/pexels-mikebirdy-996328.jpg') center/cover no-repeat;
   z-index: 0;
-background-size: cover;
-  background-position: center;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Asegura que esté por encima de .hero-bg */
-  color: white; /* Asegura que el texto sea legible */
+  z-index: 1;
+  max-width: 860px;
+  padding: 2rem 1.5rem;
 }
 
 .eyebrow {
