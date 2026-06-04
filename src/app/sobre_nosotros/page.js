@@ -224,7 +224,7 @@ export default function SobreNosotros() {
             <div className="footer-col">
               <h4>Legal y navegación</h4>
               <ul className="footer-links">
-                <li><a href="/aviso-legal">Aviso Legal</a></li>
+                <li><a href="/aviso_legal">Aviso Legal</a></li>
                 <li><a href="/politica_privacidad">Política de Privacidad</a></li>
                 <li><a href="/politica_cookies">Política de Cookies</a></li>
                 <li><a href="/">Inicio</a></li>
@@ -240,7 +240,7 @@ export default function SobreNosotros() {
               los derechos reservados
             </p>
             <ul className="footer-legal-links">
-              <li><a href="/aviso-legal">Aviso Legal</a></li>
+              <li><a href="/aviso_legal">Aviso Legal</a></li>
               <li><a href="/politica_privacidad">Privacidad</a></li>
               <li><a href="/politica_cookies">Cookies</a></li>
             </ul>
@@ -250,7 +250,7 @@ export default function SobreNosotros() {
 
 
       <div className="cookie-banner" id="cookieBanner">
-        <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia. Más información en nuestra <a href="/politica-cookies">Política de Cookies</a>.</p>
+        <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia. Más información en nuestra <a href="/politica_cookies">Política de Cookies</a>.</p>
         <div className="cookie-actions">
           <button className="cookie-btn cookie-btn-reject" onClick={() => setCookie('rejected')}>Rechazar no esenciales</button>
           <button className="cookie-btn cookie-btn-accept" onClick={() => setCookie('accepted')}>Aceptar todas</button>

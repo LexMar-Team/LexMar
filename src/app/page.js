@@ -385,7 +385,7 @@ export default function LexMarPage() {
             <div className="footer-col">
               <h4>Legal y navegación</h4>
               <ul className="footer-links">
-                <li><a href="/aviso-legal">Aviso Legal</a></li>
+                <li><a href="/aviso_legal">Aviso Legal</a></li>
                 <li><a href="/politica_privacidad">Política de Privacidad</a></li>
                 <li><a href="/politica_cookies">Política de Cookies</a></li>
                 <li><a href="/">Inicio</a></li>
@@ -401,9 +401,9 @@ export default function LexMarPage() {
               los derechos reservados
             </p>
             <ul className="footer-legal-links">
-              <li><a href="/aviso-legal">Aviso Legal</a></li>
-              <li><a href="/politica-privacidad">Privacidad</a></li>
-              <li><a href="/politica-cookies">Cookies</a></li>
+              <li><a href="/aviso_legal">Aviso Legal</a></li>
+              <li><a href="/politica_privacidad">Privacidad</a></li>
+              <li><a href="/politica_cookies">Cookies</a></li>
             </ul>
           </div>
         </div>
