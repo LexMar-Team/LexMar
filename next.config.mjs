@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // <--- Añade esta línea
+  output: 'export',
   images: {
-    unoptimized: true, // <--- Importante: desactiva la optimización de imágenes de Next.js
+    unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
