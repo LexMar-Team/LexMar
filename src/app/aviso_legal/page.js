@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+  robots: 'noindex, nofollow',
+};
+
 export default function AvisoLegal() {
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '60px 20px', lineHeight: '1.6' }}>
