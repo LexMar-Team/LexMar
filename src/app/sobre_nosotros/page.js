@@ -164,6 +164,91 @@ export default function SobreNosotros() {
         </section>
       </main>
 
+      {/* ===================== FOOTER ===================== */}
+      <footer className="main-footer">
+        <div className="container">
+          <div className="footer-grid">
+            <div className="footer-col footer-brand">
+              <div className="logo" style={{ marginBottom: '0.75rem' }}>
+                <img
+                  src="/LexMar_logo_white.png"
+                  alt="LexMar Abogados"
+                  style={{ height: '36px' }}
+                />
+                <span className="logo-text">LEXMAR</span>
+              </div>
+              <p>
+                Calle Bethencourt y Molina nº 1,
+                <br />
+                1º Local 36, 38003 Santa Cruz de Tenerife
+              </p>
+              <p>
+                <a
+                  href="tel:+34611770042"
+                  style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}
+                >
+                  611 770 042
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:info@lexmarabogados.es"
+                  style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}
+                >
+                  info@lexmarabogados.es
+                </a>
+              </p>
+              <div className="footer-social">
+                <a href="#" className="btn-89 btn-89-dark" aria-label="Facebook" rel="noopener">
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" className="btn-89 btn-89-dark" aria-label="Instagram" rel="noopener">
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" className="btn-89 btn-89-dark" aria-label="LinkedIn" rel="noopener">
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div className="footer-col">
+              <h4>Servicios</h4>
+              <ul className="footer-links">
+                <li><a href="/servicios#laboral">Derecho Laboral</a></li>
+                <li><a href="/servicios#civil">Derecho Civil</a></li>
+                <li><a href="/servicios#penal">Derecho Penal</a></li>
+                <li><a href="/servicios#accidentes">Accidentes</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-col">
+              <h4>Legal y navegación</h4>
+              <ul className="footer-links">
+                <li><a href="/aviso-legal">Aviso Legal</a></li>
+                <li><a href="/politica_privacidad">Política de Privacidad</a></li>
+                <li><a href="/politica_cookies">Política de Cookies</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/sobre_nosotros">Sobre Nosotros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>
+              © 2025 LexMar Abogados · Coral Ramos Gonzalo, colegiada nº 131177 ICAM · Todos
+              los derechos reservados
+            </p>
+            <ul className="footer-legal-links">
+              <li><a href="/aviso-legal">Aviso Legal</a></li>
+              <li><a href="/politica_privacidad">Privacidad</a></li>
+              <li><a href="/politica_cookies">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
       <div className="cookie-banner" id="cookieBanner">
         <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia. Más información en nuestra <a href="/politica-cookies">Política de Cookies</a>.</p>
         <div className="cookie-actions">

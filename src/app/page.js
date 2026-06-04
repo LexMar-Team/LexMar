@@ -386,8 +386,8 @@ export default function LexMarPage() {
               <h4>Legal y navegación</h4>
               <ul className="footer-links">
                 <li><a href="/aviso-legal">Aviso Legal</a></li>
-                <li><a href="/politica-privacidad">Política de Privacidad</a></li>
-                <li><a href="/politica-cookies">Política de Cookies</a></li>
+                <li><a href="/politica_privacidad">Política de Privacidad</a></li>
+                <li><a href="/politica_cookies">Política de Cookies</a></li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/sobre_nosotros">Sobre Nosotros</a></li>
                 <li><a href="/contacto">Contacto</a></li>
@@ -414,7 +414,7 @@ export default function LexMarPage() {
         <p>
           Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso
           del sitio web. Más información en nuestra{' '}
-          <a href="/politica-cookies">Política de Cookies</a>.
+          <a href="/politica_cookies">Política de Cookies</a>.
         </p>
         <div className="cookie-actions">
           <button

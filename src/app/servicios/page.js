@@ -382,8 +382,8 @@ export default function Servicios() {
               <h4>Legal y navegación</h4>
               <ul className="footer-links">
                 <li><a href="/aviso-legal">Aviso Legal</a></li>
-                <li><a href="/politica-privacidad">Política de Privacidad</a></li>
-                <li><a href="/politica-cookies">Política de Cookies</a></li>
+                <li><a href="/politica_privacidad">Política de Privacidad</a></li>
+                <li><a href="/politica_cookies">Política de Cookies</a></li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/sobre_nosotros">Sobre Nosotros</a></li>
                 <li><a href="/contacto">Contacto</a></li>
@@ -398,8 +398,8 @@ export default function Servicios() {
             </p>
             <ul className="footer-legal-links">
               <li><a href="/aviso-legal">Aviso Legal</a></li>
-              <li><a href="/politica-privacidad">Privacidad</a></li>
-              <li><a href="/politica-cookies">Cookies</a></li>
+              <li><a href="/politica_privacidad">Privacidad</a></li>
+              <li><a href="/politica_cookies">Cookies</a></li>
             </ul>
           </div>
         </div>
@@ -409,7 +409,7 @@ export default function Servicios() {
       <div className="cookie-banner" id="cookieBanner">
         <p>
           Utilizamos cookies propias y de terceros para mejorar tu experiencia. Más información
-          en nuestra <a href="/politica-cookies">Política de Cookies</a>.
+          en nuestra <a href="/politica_cookies">Política de Cookies</a>.
         </p>
         <div className="cookie-actions">
           <button
