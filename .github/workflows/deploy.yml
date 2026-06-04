@@ -1,4 +1,4 @@
-# Workflow de despliegue automático a STAGING
+# Workflow de despliegue automático a staging
 # Ubicación en el repo: .github/workflows/deploy.yml
 #
 # Funcionamiento:
