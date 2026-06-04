@@ -6,20 +6,103 @@
 # - Se ejecuta en el self-hosted runner instalado en el servidor.
 # - Compila la app Next.js y reinicia el servicio PM2 de staging.
 
-name: Deploy to Vercel
+# Workflow de despliegue automático a STAGING
+
+# Ubicación en el repo: .github/workflows/deploy.yml
+
+#
+
+# Funcionamiento:
+
+# - Cada push a la rama "staging" dispara este workflow.
+
+# - Se ejecuta en el self-hosted runner instalado en el servidor.
+
+# - Compila la app Next.js y reinicia el servicio PM2 de staging.
+
+
+
+name: Deploy a Staging
+
+
+
 on:
+
   push:
+
     branches:
-      - staging # O la rama que estés usando
+
+      - staging
+
+
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+
+  deploy-staging:
+
+    name: Desplegar en servidor de staging
+
+    runs-on: self-hosted
+
+
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Descargar código del repositorio
+
+        uses: actions/checkout@v4
+
+
+
+      - name: Sincronizar código con la carpeta de staging
+
+        run: |
+
+          rsync -a --delete \
+
+            --exclude='node_modules' \
+
+            --exclude='.next' \
+
+            --exclude='.git' \
+
+            ./ /var/www/lexmar-staging/
+
+
+
+      - name: Instalar dependencias (modo seguro)
+
+        working-directory: /var/www/lexmar-staging
+
+        run: |
+
+          if [ -f package-lock.json ]; then
+
+            npm ci
+
+          else
+
+            npm install
+
+          fi
+
+
+
+      - name: Compilar aplicación Next.js
+
+        working-directory: /var/www/lexmar-staging
+
+        run: npm run build
+
+
+
+      - name: Reiniciar servicio PM2 de staging
+
+        run: pm2 restart lexmar-staging --update-env
+
+
+
+      - name: Confirmar estado del servicio
+
+        run: pm2 status lexmar-staging asi se ve el deploy.yml 
+
